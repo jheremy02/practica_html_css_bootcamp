@@ -3,7 +3,8 @@
     background-image: linear-gradient(90deg, rgba(7,2,105,1) 0%, rgba(38,8,22,0.6699054621848739) 0%), url(../assets/img/hero.jpg);
     height: 100vh;
     background-size: cover;
-    background-position: 70% top;
+    background-position: 70%   top;
+    
     background-repeat: no-repeat;
     
 }
@@ -11,7 +12,7 @@
 .hero-write{
     display: grid;
     position: absolute;
-    top: 5rem;
+    top: 13rem;
     width: 45%;
     left: 4rem;
     grid-gap: 1rem;
@@ -50,4 +51,52 @@
 
 .hero-title {
     color: white;
+}
+
+
+.header-button {
+    margin-top: 2rem;
+}
+
+
+
+.header-button button {
+
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #04BF7B;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    transition: 0.4s ease;
+    font-size: 1.7rem;
+}
+
+.header-button span {
+    width:0 ;
+    height: 100%;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #04BF7B;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+/* pseudoclase con elemento */
+.header-button button:hover span {
+    width: 100%;
+} 
+
+/* pseudoclase  */
+.header-button button:hover {
+    border: none;
 }
