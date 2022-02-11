@@ -14,7 +14,31 @@ nav {
 
 
 nav .navbar-list {
+    position: absolute;
+    color: white;
+    background-color:#232426 ;
+    margin: 0;
+    width: 20rem;
+    top: 65px;
+    list-style-type: none;
+    padding: 0;
+    left: -10px;
+    height: 100vh;
     display: none;
+    text-align: center;
+    z-index: -99;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+nav .navbar-list a {
+    margin: 1rem 0;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 nav .nav-logo a  {
@@ -42,6 +66,19 @@ nav .nav-icon-search i {
 #burguer-checkbox{
     display: none;
 }
+
+
+#burguer-checkbox:checked ~  .navbar-list {
+    display:flex ;
+
+}
+
+
+
+
+
+
+
 
 nav .nav-menu-bar {
     position: relative;
