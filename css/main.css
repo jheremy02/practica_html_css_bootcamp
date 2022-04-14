@@ -82,7 +82,7 @@
     }
 
 
-    .item-description {
+    .series-item-description {
         color: white;
     }
 
@@ -90,6 +90,25 @@
     .series-title-container {
         display: flex;
         justify-content: center ;  
+        
+    }
+
+    .series-item-description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item-description-check-favourite {
+        padding: 1.7rem 0rem;
+    }
+
+    .item-description-check-favourite button {
+        background-color: #04BF68;
+        color: #04BF68;
+        border: none;
+        outline: none;
+        justify-self: center;
+        align-self: center;
         
     }
 
