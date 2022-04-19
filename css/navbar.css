@@ -1,3 +1,117 @@
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color:#232426;
+    position: fixed;
+    z-index: 100;
+}
+nav .nav-logo a  {
+    text-decoration: none;
+   }
+
+nav .nav-logo a span {
+    position: relative;;
+    font-size: 30px;
+    bottom: 1rem;
+    color: white;
+}
+
+nav .nav-logo a img {
+    width: auto;
+    height: 50px;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+nav .navbar-list a {
+    margin: 1rem 0;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#burguer-checkbox{
+    display: none;
+}
+
+nav .nav-menu-bar input,label{
+   display: none;
+}
+nav .navbar-list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 1.3rem;
+    gap: 4rem;
+}
+
+.nav-menu-bar {
+    order: 2;
+}
+.nav-logo {
+    order: 1;
+}
+
+.main-input {
+    order: 3;
+}
+
+
+
+
+nav  .main-input {
+    width: 17rem;
+    margin-top: 1.2rem;
+    margin-right: 2rem;
+}
+
+
+nav .main-input-container {
+    width: 17rem;
+    border-radius: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+nav .main-input-container input {
+    height:35px ;
+    width: 12rem;
+    border: none;
+    outline: none;
+}
+
+
+
+nav .main-input-container .search-icon {
+    background-image: url('/assets/img/search_black_24dp.svg');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: blueviolet;
+    margin-right:7px ;
+    opacity: 0.4;
+}
+
+nav .nav-icon-search {
+   display: none;
+}
+
+
+@media screen and (max-width :720px){
+
 nav {
     display: flex;
     width: 100%;
@@ -11,6 +125,7 @@ nav {
     z-index: 100;
 
 }
+
 
 
 nav .navbar-list {
@@ -45,8 +160,8 @@ nav .nav-logo a  {
  text-decoration: none;
 }
 nav .nav-logo a img {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 50px;
     margin-right: 1rem;
 }
 
@@ -57,9 +172,14 @@ nav .nav-logo a span {
     color: white;
 }
 
+nav .nav-icon-search {
+    display: inline-block;
+ }
+
+
 nav .nav-icon-search i {
-    position: relative;
-   top: 0.6rem;
+   position: relative;
+   top: 2rem;
    font-size: 25px;
    color: white;
 }
@@ -75,16 +195,30 @@ nav .nav-icon-search i {
 }
 
 
-
-
-
-
-
-
 nav .nav-menu-bar {
+    display: inline-block;
     position: relative;
     top: 0.5rem;
     font-size: 28px;
     color: #04BF68;
+}
+
+nav .nav-menu-bar input,label{
+    display:inline-block;
+ }
+
+ .nav-menu-bar {
+    order: 1;
+}
+.nav-logo {
+    order: 2;
+}
+.nav-icon-search {
+    order: 3;
+}
+
+nav  .main-input {
+    display: none;
+}
 
 }
