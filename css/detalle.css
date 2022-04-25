@@ -1,0 +1,97 @@
+nav {
+    
+}
+
+header .hero-container {
+    width: 100%;
+    position: relative;
+    padding-top: 80px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+.hero-container .hero-video {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    
+}
+
+.hero-container .hero-video video {
+    height: 70vh;
+    object-fit: contain
+}
+
+.hero-container .hero-write {
+    position: relative;
+    display: block;
+    width: 100%;
+    flex: 1;
+}
+
+.hero-container .hero-write-container {
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    object-fit: contain;
+    
+}
+
+.hero-write-container .hero-write-main-info {
+    flex: 1;
+}
+
+.hero-write-container .hero-write-more-info {
+    flex: 1;
+}
+
+.hero-container .hero-write {
+    left: 0;
+    top: 1rem;
+
+
+}
+
+
+header .hero-container .hero-write .hero-write-main-info .hero-title, .hero-calification , .hero-year , .hero-sinopsis {
+    font-size: 1.5rem !important;
+}
+
+#section-feature {
+    top: 1rem !important;
+}
+
+.featured-title-container  .featured-title-item {
+    margin-top: 4rem;
+}
+
+.hero-write-more-info {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+ .featured .featured-title-container {
+    margin-top: 1rem !important;
+}
+
+@media screen and (max-width:720px) {
+
+    .hero-container .hero-video video {
+        height: 70vh;
+        object-fit: contain
+    }
+
+    .hero-container .hero-write-container {
+        flex-direction: column;
+    }
+    
+}
