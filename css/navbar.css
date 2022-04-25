@@ -70,7 +70,7 @@ nav .navbar-list li {
     width: 0;
     background:#04BF68;
     position: absolute;
-    left: 5rem;
+    left: 0rem;
     bottom: 3px;
     transition: 0.5s ;
 
@@ -78,7 +78,7 @@ nav .navbar-list li {
 
 /* pseudoclase con pseudoelemento */
  .navbar-list li:hover:after {
-    width: 50%;
+    width: 100%;
     
 }
 
@@ -157,6 +157,24 @@ nav {
 
 }
 
+/* pseudoelemento */
+.navbar-list li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#04BF68;
+    position: absolute;
+    left: 5rem;
+    bottom: 3px;
+    transition: 0.5s ;
+
+}
+
+/* pseudoclase con pseudoelemento */
+ .navbar-list li:hover:after {
+    width: 50%;
+    
+}
 
 
 nav .navbar-list {
