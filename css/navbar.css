@@ -7,12 +7,13 @@ nav {
     flex: 1;
     justify-content: space-between;
     padding: 1rem;
-    background-color:#232426;
+    background-color:#0D0D0D;
     position: fixed;
     z-index: 100;
 }
 nav .nav-logo a  {
     text-decoration: none;
+    
    }
 
 nav .nav-logo a span {
@@ -29,6 +30,9 @@ nav .nav-logo a img {
     margin-right: 1.5rem;
 }
 
+
+
+
 nav .navbar-list a {
     margin: 1rem 0;
     width: 100%;
@@ -42,15 +46,40 @@ nav .navbar-list a {
     display: none;
 }
 
-nav .nav-menu-bar input,label{
+nav .nav-menu-bar>input, .nav-menu-bar>label{
    display: none;
 }
+
+
 nav .navbar-list {
     display: flex;
     text-decoration: none;
     list-style: none;
     margin-top: 1.3rem;
     gap: 4rem;
+}
+
+nav .navbar-list li {
+    position: relative;
+}
+
+/* pseudoelemento */
+.navbar-list li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#04BF68;
+    position: absolute;
+    left: 5rem;
+    bottom: 3px;
+    transition: 0.5s ;
+
+}
+
+/* pseudoclase con pseudoelemento */
+ .navbar-list li:hover:after {
+    width: 50%;
+    
 }
 
 .nav-menu-bar {
@@ -64,7 +93,9 @@ nav .navbar-list {
     order: 3;
 }
 
-
+.close {
+    color: white;
+}
 
 
 nav  .main-input {
@@ -85,7 +116,7 @@ nav .main-input-container {
 }
 
 nav .main-input-container input {
-    height:35px ;
+    height:30px ;
     width: 12rem;
     border: none;
     outline: none;
@@ -94,13 +125,13 @@ nav .main-input-container input {
 
 
 nav .main-input-container .search-icon {
-    background-image: url('/assets/img/search_black_24dp.svg');
+    background-image: url('../assets/img/search_black_24dp.svg');
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: blueviolet;
+    color: black;
     margin-right:7px ;
     opacity: 0.4;
 }
@@ -110,7 +141,7 @@ nav .nav-icon-search {
 }
 
 
-@media screen and (max-width :720px){
+@media screen and (max-width :900px){
 
 nav {
     display: flex;
@@ -203,8 +234,8 @@ nav .nav-menu-bar {
     color: #04BF68;
 }
 
-nav .nav-menu-bar input,label{
-    display:inline-block;
+nav .nav-menu-bar>input, .nav-menu-bar>label{
+    display: inline-block;
  }
 
  .nav-menu-bar {
