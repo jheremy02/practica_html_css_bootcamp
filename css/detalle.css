@@ -53,10 +53,20 @@ header .hero-container {
     flex: 1;
 }
 
+.hero-write-container .hero-write-more-info h3 {
+    margin-top: 2rem;
+
+}
+
+.hero-write-container .hero-write-more-info ul{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    
+}
+
 .hero-container .hero-write {
     left: 0;
     top: 1rem;
-
 
 }
 
