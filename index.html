@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/novedades.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Raivers</title>
 </head>
 <body>
@@ -25,15 +28,15 @@
 
             <ul class="navbar-list">
                 <li> <a href="#section-featured">NOVEDADES</a></li>
-                <li><a href="">SERIES</a></li>
+                <li><a href="#section-series">SERIES</a></li>
                 <li> <a href="">PELICULAS</a></li>
-                <li> <a href="">FAVORITOS</a></li>
+                <li> <a href="">CERRAR SESION</a></li>
                 
         </ul>
-        </div>
+        </div> 
         
         <div class="nav-logo">
-                <a href=""><img src="./assets/img/logo_web.svg" alt=""><span>Raivers</span></a>
+                <a href=""><img src="./assets/img/logo_web_02.png" alt=""><span>Raivers</span></a>
         </div>
 
         <div class="main-input">
@@ -43,6 +46,8 @@
                 <span class="search-icon">  </span>
                 
             </div>
+        </div>
+
         </div>
 
         <div class="nav-icon-search">
@@ -62,7 +67,7 @@
                 <div class="item hero-year"> <span>Año:</span> 2022</div>
                 <div class="item hero-sinopsis"> <span>Sinopsis :</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, atque vero cupiditate inventore asperiores optio expedita natus?</div>
                 <div class="header-button">
-                    <button><span></span><a href="#">PLAY NOW</a> </button>
+                    <button><span></span><a href="detalle.html">PLAY NOW</a> </button>
                 </div>
             
             </div>
@@ -81,29 +86,30 @@
         <div class="featured-grid-container">
             
             <figure class="featured-grid-item  card-1">
-                <img src="./assets/img/movie_01.jpg" alt="">
+                <a  class="featured-grid-item-img"   href="detalle.html"> <img src="./assets/img/movie_01.jpg" alt=""></a>
                 <div class="featured-item-description">
                     <div class="item-description-text">
-                        <h2>Bastardos sin gloria</h2>
+                        <a href="detalle.html"><h2>Bastardos sin gloria</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
-                <div class="item-description-check-favourite">
-                    <input type="checkbox" id="icon-check-favorite">
-                    <label for="icon-check-favorite" class="icon-without-check"><i class="fa-regular fa-heart fa-xl"></i></label>
-                    <label for="icon-check-favorite" class="icon-checked"><i class="fa-solid fa-heart fa-xl"></i></label>
-                    
+                    <div class="item-description-check-favourite">
+                        <input type="checkbox" id="icon-check-favorite">
+                        <label for="icon-check-favorite" class="icon-without-check"><i class="fa-regular fa-heart fa-xl"></i></label>
+                        <label for="icon-check-favorite" class="icon-checked"><i class="fa-solid fa-heart fa-xl"></i></label>
                     
                 </div>
                 </div>
             </figure>
             <figure class="featured-grid-item  card-2">
-                <img src="./assets/img/movie_01.jpg" alt="">
+                <a  class="featured-grid-item-img"   href="detalle.html"> <img src="./assets/img/movie_01.jpg" alt=""></a>
                 <div class="featured-item-description">
                     <div class="item-description-text">
-                        <h2>Bastardos sin gloria</h2>
+                        <a href="detalle.html"><h2>Bastardos sin gloria</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                     <div class="item-description-check-favourite">
                         <input type="checkbox" id="icon-check-favorite-2">
@@ -115,12 +121,13 @@
                 </div>
             </figure>
             <figure class="featured-grid-item  card-3">
-                <img src="./assets/img/movie_01.jpg" alt="">
+                <a  class="featured-grid-item-img"   href="detalle.html"> <img src="./assets/img/movie_01.jpg" alt=""></a>
                 <div class="featured-item-description">
                     <div class="item-description-text">
-                        <h2>Bastardos sin gloria</h2>
+                        <a href="detalle.html"><h2>Bastardos sin gloria</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                     <div class="item-description-check-favourite">
                         <input type="checkbox" id="icon-check-favorite-3">
@@ -132,12 +139,13 @@
                 </div>
             </figure>
             <figure class="featured-grid-item card-4">
-                <img src="./assets/img/movie_01.jpg" alt="">
+                <a  class="featured-grid-item-img"   href="detalle.html"> <img src="./assets/img/movie_01.jpg" alt=""></a>
                 <div class="featured-item-description">
                     <div class="item-description-text">
-                        <h2>Bastardos sin gloria</h2>
+                        <a href="detalle.html"><h2>Bastardos sin gloria</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                     <div class="item-description-check-favourite">
                         <input type="checkbox" id="icon-check-favorite-4">
@@ -156,7 +164,7 @@
 
     <!-- Seccion de series -->
     
-    <section class="series">
+    <section class="series" id="section-series">
         <div class="series-title-container">
             <div class="series-title-item">
                 <h2>Series</h2>
@@ -164,12 +172,13 @@
         </div>
         <div class="series-grid-container">
             <figure class="series-grid-item card-1">
-                <img src="./assets/img/series_01.jpg" alt="">
+                 <a  class="series-grid-item-img" href="detalle.html">  <img src="./assets/img/series_01.jpg" alt=""> </a>
                 <div class="series-item-description">
                     <div class="item-description-text">
-                        <h2>Mr Robot</h2>
+                         <a href="detalle.html"><h2>Mr Robot</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                 <div class="item-description-check-favourite">
                     <input type="checkbox" id="icon-check-favorite-series-1">
@@ -179,12 +188,13 @@
                 </div>
             </figure>
             <figure class="series-grid-item card-2">
-                <img src="./assets/img/series_01.jpg" alt="">
+                <a  class="series-grid-item-img" href="detalle.html">  <img src="./assets/img/series_01.jpg" alt=""> </a>
                 <div class="series-item-description">
                     <div class="item-description-text">
-                        <h2>Mr Robot</h2>
+                        <a href="detalle.html"><h2>Mr Robot</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                 <div class="item-description-check-favourite">
                     <input type="checkbox" id="icon-check-favorite-series-2">
@@ -194,12 +204,13 @@
                 </div>
             </figure>
             <figure class="series-grid-item card-3">
-                <img src="./assets/img/series_01.jpg" alt="">
+                <a  class="series-grid-item-img" href="detalle.html">  <img src="./assets/img/series_01.jpg" alt=""> </a>
                 <div class="series-item-description">
                     <div class="item-description-text">
-                        <h2>Mr Robot</h2>
+                        <a href="detalle.html"><h2>Mr Robot</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                 <div class="item-description-check-favourite">
                     <input type="checkbox" id="icon-check-favorite-series-3">
@@ -209,12 +220,13 @@
                 </div>
             </figure>
             <figure class="series-grid-item card-4">
-                <img src="./assets/img/series_01.jpg" alt="">
+                <a  class="series-grid-item-img" href="detalle.html">  <img src="./assets/img/series_01.jpg" alt=""> </a>
                 <div class="series-item-description">
                     <div class="item-description-text">
-                        <h2>Mr Robot</h2>
+                        <a href="detalle.html"><h2>Mr Robot</h2></a> 
                         <div class="item-description-calification"> <span>Calificacion : </span>⭐⭐⭐⭐⭐</div>
                         <div class="item-description-year"> <span>Año:</span> 2022</div>
+                        <div class="item-description-sinopsis"><span>Sinopsis : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam labore iure aliquid ab excepturi possimus ipsa hic atque porro laborum pariatur.</span> </div>
                     </div>
                 <div class="item-description-check-favourite">
                     <input type="checkbox" id="icon-check-favorite-series-4">
