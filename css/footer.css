@@ -39,6 +39,7 @@
             justify-content: center;
             font-size: 1.2rem;
             margin: 1rem 3rem;
+            align-items: center;
         }
     
         .footer-container a {
